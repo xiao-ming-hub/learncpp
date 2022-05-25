@@ -1,7 +1,4 @@
 # 0 - 认识 C++
-## 为什么选择 C++
-C++ 是我最早学习的一门编程语言。C++ 相比于 Python、Java、Go、JavaScript、PHP 等主流语言运行速度更快，但难度也相对较高。熟悉了 C++ 后再去学习其它的语言会容易很多。
-
 ## Windows 环境搭建
 vscode：<https://code.visualstudio.com/>  
 mingw 的 g++ 安装指南：<http://c.biancheng.net/view/8077.html>
