@@ -1,37 +1,35 @@
-# 0 - 认识 C++
-## Windows 环境搭建
+# 1 - Hello world
+## 环境搭建
 vscode：<https://code.visualstudio.com/>  
 mingw 的 g++ 安装指南：<http://c.biancheng.net/view/8077.html>
 
 ## 编译、运行
-运行 C++ 代码分为两个步骤：编译和运行。编译就是把代码变成我们双击就能运行的 `.exe` 文件，这步由编译器完成。运行就相当于 “双击”。
-
 这是 C++ Hello world 代码：
 ```cpp
 #include <iostream>
 using namespace std;
 int main() {
-  cout << "Hello world!" << endl;
+  cout << "Hello world." << endl;
   return 0;
 }
 ```
-保存文件为 `hello.cpp`。CTRL + \` 打开命令行，`cd` 切换到当前目录。输入编译命令：
+保存文件为 `hello.cpp`。在命令行输入编译命令：
 ```
-C:\Users\<username>\Document\cpp> g++ hello.cpp
+PS C:\Users\<username>\Document\cpp> g++ hello.cpp
 ```
-工作目录下多了个 `a.exe`，运行它：
+工作目录下多了个 `a.exe`。运行它：
 ```
-C:\Users\<username>\Document\cpp> ./a.exe
+PS C:\Users\<username>\Document\cpp> .\a.exe
 Hello world!
 ```
-很显然，这段代码就是输出一行文字。现在你可以试着修改这段代码，使它输出 “Hello C++!”。
+很显然，这段代码的功能就是输出一行文字。现在你可以试着修改这段代码，使它输出 “Hello\_world?”。
 
 ## Hello world!
 第一行的作用是 “引入头文件”。事实上在安装 g++ 时也自动下载了一些代码，其中就有一个名为 iostream 的代码。第一行就是让编译器自动把那份代码复制粘贴到我们写的这一份代码里。我们可以试着去掉这一行，再编译看看会有什么反应。它报错了！它说它不认识 `cout` 是什么意思。它还很友好地提示你，是不是少了这一行。在 C++ 中，通常把以 # 号开头，换行符结尾的代码成为预处理指令。预处理在以后会详细介绍，现在只要认识这三个字就行。有关预处理的内容
 
 看第二行。它翻译过来就是 “使用 `std` 命名空间”。关于命名空间的概念，我们会在学习函数时进一步讲解。我们可以试着去掉这一行，它又说它不认识 `cout` 了。
 
-看第三行和第六行，它的意思是 “定义 `main` 函数”，它告诉计算机程序从哪开始执行。和前面一样我们暂且不用在乎它是什么含义，只要知道少了它程序就不能运行即可。算机会从第四行开始运行。
+看第三行和第六行，它的意思是 “定义 `main` 函数”，它告诉计算机程序从哪开始执行。和前面一样我们暂且不用在乎它是什么含义，只要知道少了它程序就不能运行即可。计算机会从第四行开始运行。
 
 第四行的意思是输出一行字符串 “Hello world!” 然后换行。`cout` 可以向屏幕输出一些东西。我们把要输出的和 `cout` 用流运算符 `<<` 连接起来，计算机就会把我们向输出的东西输出到屏幕。`endl` 是 “end line” 的缩写，计算机看到它时就会另起一行。
 
@@ -41,10 +39,11 @@ Hello world!
 在 C++ 中大多数的空格和换行符可以省略，也就是说上面的代码也可以这么写：
 ```cpp
 #include <iostream>
-using namespace std;int main(){cout<<"Hello world!"<<endl;return 0;}
+using namespace std;int main(){cout<<"Hello world."<<endl;return 0;}
 ```
 但这样写的代码会很难看，且如果哪个地方写错了，检查哪里出问题时会很麻烦。
 
+## 注释
 有的时候我们看自己以前写的代码或者别人看我们写的代码也会看不懂。所以给代码添加一些文字说明是有必要的。这就是注释的作用。注释的本质是让编译器忽略标记的一段代码。让编译器忽略一段代码有三种方法：/\*\*/、// 和预处理语句。这是一个给 Hello world 添加注释的例子：
 ```cpp
 /*
@@ -68,11 +67,11 @@ int main() {                      // 声明 main 函数，并开始实现
 
 你也许会在其它地方看到向这样的注释：
 ```cpp
-/* 这是一堆注释有什么好写的阿这
- * 连代码都没有写来干嘛算了毕竟
- * 也不会有人看那就随便写写吧摆
- * 烂万岁adufaewuifhna;weri
- * afh;hgew3iufh;goew3uaio
+/* ofjiwea;fhio;wae'ghnva'g
+ * ;hfweoirf;ahewioafh;ewiu
+ * asfjlhksjkdfhslkjdfhskjf
+ * ；;fshaiufaewuifhna;weri
+ * afh;hgew3iufh;goew3uaisd
  * */
 ```
 它和前面的空格换行一样，这样做也是为了好看。
