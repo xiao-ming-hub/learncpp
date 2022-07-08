@@ -5,6 +5,9 @@ C++ 是编译性语言。通常运行 C++ 程序分为两步，编译和运行�
 
 这个仓库里的内容不会深入地讲，更重要的是积累学习的经验。
 
+主仓库：<https://github.com/xiao-ming-hub/learncpp>；<br />
+镜像仓库：<https://gitee.com/a_Txy/learncpp>。
+
 ## 常用快捷键
 用惯后打字会很方便。
 | 按键                | 含义                |
@@ -36,7 +39,7 @@ MingW 是一个厂商，它开发的 g++ 与 Linux 下的 g++ 兼容性较好。
 
 官网：<https://osdn.net/projects/mingw/>
 
-类似的另外一个厂商是 LLVM，它开发的 C++ 编译器是 clang++，再次不做过多介绍，建议自行搜索。
+类似的另外一个厂商是 LLVM，它开发的 C++ 编译器是 clang++，在此不做过多介绍，建议自行搜索。
 
 ### VSCode
 一个轻量级集成开发环境（IDE）（看不到没关系反正用起来很方便就是了）。
@@ -50,6 +53,31 @@ MingW 是一个厂商，它开发的 g++ 与 Linux 下的 g++ 兼容性较好。
 - 代码截图 Polacode-2020
 - 彩虹括号 Rainbow Brackets
 - C++ 扩展包 C/C++ Extension Pack，包括 CMake，代码补全，语法高亮，调试工具等。
+
+### runoob.com
+也是一个学习网站，有主流编程语言的教程。
+
+C++：<http://runoob.com/cplusplus>
+
+### OI-wiki
+几乎包含了 OI 需要学习的所有知识。
+
+主站：<https://oi-wiki.org>。镜像站列表（摘自<https://oi-wiki.org/intro/mirrors/>）：
+- <http://oi-wiki.com>
+- <https://demo.oi-wiki.org>
+- <https://oi-wiki.net>
+- <https://oi-wiki.wiki>
+- <https://oi-wiki.win>
+- <https://oi-wiki.xyz>
+- <https://oiwiki.moe>
+- <https://oiwiki.net>
+- <https://oiwiki.org>
+- <https://oiwiki.vx.st>
+- <https://oiwiki.wiki>
+- <https://oiwiki.win>
+- <https://oiwiki.xyz>
+- <https://oiwiki.com>
+- <https://oi.wiki>
 
 ## 命令行
 按下 Win + r，输入 wt，回车或者在 vscode 按下 CTRL + \`，弹出了一个黑底白字的窗口，现在你可以简单地认为它就是我指的**命令行**。在这里用户通过输入命令来与计算机交互。
@@ -82,8 +110,8 @@ PS C:\Users\86135>
 
 ## 目录
 基础
-1. Hello world
-2. 变量与输入
+1. [Hello world](books/1-基础/1-hello/content.md)
+2. [变量与输入](books/1-基础/2-变量与输入/content.md)
 3. scanf 与 printf
 4. 函数与命名空间
 5. 类与结构体
