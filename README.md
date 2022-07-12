@@ -98,23 +98,27 @@ PS C:\Users\86135>
 | move/mv   | 移动文件 / 文件夹                       |
 | tree      | 以树状图显示文件结构                    |
 
+在命令行中，表示一个文件的位置有两种方式，**绝对路径**和**相对路径**。假设 `C:\Usere\Admin` 下有 `hello.txt` 和 `hello world.txt`，那 `hello.txt` 用绝对路径表示就是 `C:\Users\Admin\hello.txt`。
+相对路径是相对于工作目录而言的。假设当前工作目录是 `C:\Users`，那么 `hello.txt` 用相对路径表示是 `.\Admin\hello.txt`。在每个目录中，有两个 “隐藏文件夹”，`..` 和 `.`。`..` 是上一层文件夹，`.`
+是当前文件夹。还是假设当前工作目录是 `C:\Users`，那么 `..` 是 `C:\`，`.` 是 `C:\Users`。如果你的工作目录是 `C:\Users\Admin\Desktop`，那么用相对路径表示 `hello.txt` 是 `..\hello.txt`。
+当文件路径包含空格的时候，要给路径加上引号。如 `hello world.txt` 的绝对路径是 `'C:\Users\Admin\hello world.txt'`。这也是为什么文件名字不能包含引号。
+
 如果想运行工作目录下的某个脚本 `*.bat` 或可执行文件 `*.exe`，可以这样做（假设它是 `hello.exe`）：
 ```
 PS C:\Users\86135> .\hello
 Hello world.
 PS C:\Users\86135>
 ```
-在 Windows 中的 Powershell 运行脚本 / 可执行文件不需要加后缀，但需要加上所在目录。`.` 表示当前所在目录，`..` 表示上一级目录。
-
-在命令行中，表示一个文件的位置有两种方式，**绝对路径**和**相对路径**。绝对路径就是以盘符（如 `C:\`）开头的，相对路径是相对于工作目录而言的。
+在 Windows 中的 Powershell 运行脚本 / 可执行文件不需要加后缀，但需要加上所在目录。
 
 ## 目录
 基础
 1. [Hello world](books/1-基础/1-hello/content.md)
-2. [变量与输入](books/1-基础/2-变量与输入/content.md)
-3. scanf 与 printf
-4. 函数与命名空间
-5. 类与结构体
+2. [变量](books/1-基础/2-变量/content.md)
+3. 常量
+4. scanf 与 printf
+5. 函数与命名空间
+6. 类与结构体
 
 数据结构
 1. 数组

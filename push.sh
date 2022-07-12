@@ -1,4 +1,4 @@
 #! /bin/sh
-git push gitee main
-git push github main
+git push ee main
+git push hub main
 
