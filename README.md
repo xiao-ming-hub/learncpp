@@ -114,7 +114,7 @@ PS C:\Users\86135>
 ## 目录
 基础
 1. [Hello world](books/1-基础/1-hello/content.md)
-2. [变量](books/1-基础/2-变量/content.md)
+2. [变量](books/1-基础/2-variable/content.md)
 3. 常量
 4. scanf 与 printf
 5. 函数与命名空间
